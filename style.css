@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #26324A;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+.productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    overflow-y: auto; /* Add vertical scrollbar when needed */
+    max-height: 500px; /* Set max height to control scrollbar appearance */
+}
+
+.product {
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.product p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.product .price {
+    font-weight: bold;
+    color: #007bff;
+}
